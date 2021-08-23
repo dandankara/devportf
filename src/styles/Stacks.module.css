@@ -1,7 +1,18 @@
 .Container{
-  padding: 1rem;
+  height: 100%;
 }
 
 .items{
  border:1px solid;
 }
+
+
+
+/* 
+  html #E34F26
+  css #1572B6
+  javascript #F7DF1E
+  React #61DAFB
+  styled #DB7093
+  next #000000 
+*/

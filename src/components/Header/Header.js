@@ -10,7 +10,9 @@ export default function Header() {
     <div className={styles.Container}>
 
       <section className={styles.SectionLink}>
-        <Image src={logo} alt="logo" />
+        <Link href="/">
+          <a><Image src={logo} alt="logo" /></a>
+        </Link>
 
         <Link href="/stacks">
           <a>Stacks</a>

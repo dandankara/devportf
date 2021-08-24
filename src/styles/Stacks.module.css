@@ -1,10 +1,15 @@
 .Container{
   height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .items{
  border:1px solid;
+ margin: 1rem;
 }
+
 
 
 

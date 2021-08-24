@@ -1,51 +1,48 @@
-import Html from '../../public/Icons/html5.svg'
-import Css from '../../public/Icons/css3.svg'
-import Javascript from '../../public/Icons/javascript.svg'
-import React from '../../public/Icons/react.svg'
-import NextJs from '../../public/Icons/nextdotjs.svg'
-import Styled from '../../public/Icons/styledcomponents.svg'
+import { ContainerFlex, ItemFlex } from '../styles/StackStyles'
 
-import styles from '../styles/Stacks.module.css';
-import Image from 'next/image';
+import {
+  Html5,
+  Css3,
+  Javascript,
+  ReactLogo
+} from '@styled-icons/boxicons-logos'
+
+import {NextDotJs, StyledComponents} from '@styled-icons/simple-icons/'
 
 export default function Stacks() {
   return (
-    <div className={styles.Container}>
+    <ContainerFlex>
 
-      <span>
-        <h1>Html</h1>
-        <Image src={Html} alt="html" />
-      </span>
+      <ItemFlex >
+        <p>Html</p>
+        <Html5 size="32" />
+      </ItemFlex>
 
-      <span>
-      <h1>Css</h1>
-      <Image src={Css} alt="css" />
-      </span>
+      <ItemFlex >
+        <p>Css</p>
+        <Css3 size="32" />
+      </ItemFlex>
 
+      <ItemFlex >
+        <p>Javascript</p>
+        <Javascript size="32" />
+      </ItemFlex>
 
-      <span>
-      <h1>Javascript</h1>
-      <Image src={Javascript} alt="javascript" />
-      </span>
+      <ItemFlex >
+        <p>React</p>
+        <ReactLogo size="32" />
+      </ItemFlex>
 
+      <ItemFlex >
+        <p>NextJs</p>
+        <NextDotJs size="32" />
+      </ItemFlex>
 
-      <span>
-      <h1>React</h1>
-      <Image src={React} alt="react" />
-      </span>
+      <ItemFlex >
+        <p>Styled-Components</p>
+        <StyledComponents size="32" />
+      </ItemFlex>
 
-
-      <span>
-      <h1>NextJs</h1>
-      <Image src={NextJs} alt="next" />
-      </span>
-
-
-      <span>
-      <h1>Styled Components</h1>
-      <Image src={Styled} alt="styled" />
-      </span>
-
-    </div>
+    </ContainerFlex>
   )
 }

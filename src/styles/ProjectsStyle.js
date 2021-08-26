@@ -8,6 +8,7 @@ export const ContainerProjects = styled.div`
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding: 1rem;
 `;
 
 export const CardProjects = styled.div`
@@ -30,6 +31,7 @@ export const CardProjects = styled.div`
     text-align: center;
     background-color: #23BE53;
     padding: 10px;
+    border-radius: 10px;
     
   }
 `;

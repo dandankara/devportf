@@ -1,33 +1,34 @@
 import React from 'react'
-import styles from '../../styles/Header.module.css'
 import Link from 'next/link'
 
 import Image from 'next/image'
 import logo from '../../../public/assets/logo.png'
+import { ButtonContact, HeaderContainer  } from '../../styles/HeaderStyle'
 
 export default function Header() {
   return (
-    <div className={styles.Container}>
+    <>
+      <HeaderContainer>
+    
+          <Link href="/">
+            <a><Image src={logo} alt="logo" /></a>
+          </Link>
 
-      <section className={styles.SectionLink}>
-        <Link href="/">
-          <a><Image src={logo} alt="logo" /></a>
-        </Link>
+          <Link href="/stacks">
+            <a>Habilidades</a>
+          </Link>
 
-        <Link href="/stacks">
-          <a>Stacks</a>
-        </Link>
+          <Link href="/projects">
+            <a>Projetos</a>
+          </Link>
 
-        <Link href="/projects">
-          <a>Projects</a>
-        </Link>
+          <Link href="/About">
+            <a>Sobre mim</a>
+          </Link>
 
-        <Link href="/About">
-          <a>About me</a>
-        </Link>
-
-        <button className={styles.ButtonContact}>Contact</button>
-      </section>
-    </div>
+          <ButtonContact>Contato</ButtonContact>
+     
+      </HeaderContainer>
+    </>
   )
 }

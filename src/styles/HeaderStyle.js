@@ -29,6 +29,7 @@ border-radius: 10px;
 font-weight: 600;
 height: 30px;
 cursor: pointer;
+color: #E7DFDD ;
 
 :hover{
   background-color: #E7DFDD;

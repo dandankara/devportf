@@ -22,7 +22,7 @@ export default function Header() {
             <a>Projetos</a>
           </Link>
 
-          <Link href="/About">
+          <Link href="/about">
             <a>Sobre mim</a>
           </Link>
 
